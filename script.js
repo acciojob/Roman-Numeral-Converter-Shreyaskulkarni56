@@ -1,4 +1,4 @@
-ffunction convertToRoman(num) {
+function convertToRoman(num) {
   const obj = {
     0: ['M', 1000],
     1: ['CM', 900],
@@ -30,7 +30,9 @@ ffunction convertToRoman(num) {
   return result;
 }
 
-console.log(convertToRoman(14));
-console.log(convertToRoman(798));
-// do not edit below this line
-module.exports = convertToRoman
+function convert() {
+  const num = Number(document.getElementById("numberInput").value);
+  document.getElementById("output").textContent = convertToRoman(num);
+}
+
+module.exports = convertToRoman;
