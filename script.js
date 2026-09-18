@@ -34,5 +34,5 @@ function convert() {
   const num = Number(document.getElementById("numberInput").value);
   document.getElementById("output").textContent = convertToRoman(num);
 }
-
+module.exports = convertToRoman;
 module.exports = convertToRoman;
